@@ -16,8 +16,7 @@ spec:
         app: web
     spec:
       containers:
-      - image: webapp:latest
-        imagePullPolicy: Never
+      - image: gcr.io/river-nectar-360800/github.com/costapauloedu/mitigacao-ddos
         name: webapp
         ports:
         - containerPort: 80
