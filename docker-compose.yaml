@@ -1,0 +1,12 @@
+version: "3.3"
+
+services:
+  webapp:
+    build: .
+    container_name: webapp
+    image: webapp:latest
+    ports:
+      - "80:80"
+      - "9000:9000"
+    volumes:
+      - ./app:/var/www/application
