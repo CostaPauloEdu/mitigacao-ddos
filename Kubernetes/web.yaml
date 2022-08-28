@@ -22,11 +22,11 @@ spec:
         - containerPort: 80
         resources:
           limits:
-            cpu: 1
-            memory: 1024Mi
+            cpu: 400m
+            memory: 512Mi
           requests:
-            cpu: 500m
-            memory: 500Mi
+            cpu: 200m
+            memory: 256Mi
         startupProbe:
           httpGet:
             path: /test
